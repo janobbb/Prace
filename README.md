@@ -5,7 +5,7 @@
 
 3.Projekt "SimpleDataBaseApp" to aplikacja mobilna stworzona w Android Studio przy użyciu języka Java. Ma na celu przedstawienie przykładowej aplikacji zintegrowanej z bazą danych (Layout był tworzony pod mój telefon, więc może się bugować).
 
-4.Projekt "SimplePianoApp" to aplikacja mobilna stworzona w Android Studio z wykorzystaniem języka Java. Jest to aplikacja rozrywkowa, która symuluje dźwięki pianina i umożliwia granie prostych melodii.
+4.Projekt "SimplePianoApp" to aplikacja mobilna stworzona w Android Studio z wykorzystaniem języka Java. Jest to aplikacja rozrywkowa, która symuluje dźwięki pianina i umożliwia granie prostych melodii (Layout był tworzony pod mój telefon, więc może się bugować).
 
 5.Projekt "WorkerClass" to zadanie związane ze studiami, które polega na stworzeniu prostej klasy reprezentującej pracownika.
 
