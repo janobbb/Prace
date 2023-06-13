@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/upperRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="C"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="D"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="E"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/upperRow"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="F"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="G"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="A"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lowerRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/middleRow"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="playSoundView"
+            android:text="H"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saveRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/lowerRow"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="#CDB123"
+            android:onClick="write"
+            android:text="Save" />
+
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="read"
+            android:text="Load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soundNamesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_below="@id/saveRow"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoundNames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deleteRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/soundNamesLayout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EC0823"
+            android:onClick="delete"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="#16BD0B"
+            android:onClick="playActiveMelody"
+            android:text="Play" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
