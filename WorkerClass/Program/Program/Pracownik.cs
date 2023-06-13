@@ -102,15 +102,15 @@ namespace Program
 
             for (int i = 0; i < workerArray.Length; i++)
             {
-                // first name
+                // imie
                 name_index = rand.Next(0, names.Length);
                 name = names[name_index];
 
-                // last name
+                // nazwisko
                 last_name_len = rand.Next(3, 16);
                 last_name = LastNameGenerator(last_name_len, rand);
 
-                // title
+                // tytuł
                 title_index = rand.Next(0, titles.Count);
                 title = titles[title_index];
 
@@ -120,7 +120,7 @@ namespace Program
                 if (kierownik_count >= 3) titles.Remove("kierownik");
                 else if (manager_count >= 10) titles.Remove("manager");
 
-                // seniority
+                // stażPracy
                 workingYears = rand.Next(0, 26);
 
                 workerArray[i] = new Pracownik(name, last_name, title, workingYears);
@@ -146,17 +146,17 @@ namespace Program
         {
             List<Pracownik> sortedList;
 
-            // Nazwisko
+            // nazwisko
             if (key == 0)
             {
                 sortedList = company.OrderBy(p => p.Nazwisko).ToList();
             }
-            // Tytuł
+            // tytuł
             else if (key == 1)
             {
                 sortedList = company.OrderBy(p => p.Stanowisko).ToList();
             }
-            // Pensja
+            // pensja
             else if (key == 2)
             {
                 sortedList = company.OrderBy(p => p.Pensja).ToList();
