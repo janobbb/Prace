@@ -1,0 +1,63 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Puzzle
+build_property.ProjectDir = C:\Users\Janek\source\repos\Puzzle\Puzzle\
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/InstructionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.InstructionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = InstructionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = InstructionPage.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/ScorePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.ScorePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ScorePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ScorePage.xaml
+
+[C:/Users/Janek/source/repos/Puzzle/Puzzle/StartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Puzzle.StartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = StartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = StartPage.xaml

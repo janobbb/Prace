@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Puzzle.StartPage"
+             Title="StartPage"
+        BackgroundColor="#ff827a">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="ButtonStyle1" TargetType="Button">
+                <Setter Property="Margin" Value="2,2,2,2"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="2,0">
+                            <GradientStop Offset="0.3" Color="#ff827a"/>
+                            <GradientStop Offset="0.5" Color="#f4679e"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="FontSize" Value="40"/>
+            </Style>
+
+            <Style x:Key="ButtonStyle2" TargetType="Button">
+                <Setter Property="Margin" Value="2,2,2,2"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Offset="0.6" Color="#77aa2a"/>
+                            <GradientStop Offset="1" Color="#CBF04A"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="FontSize" Value="35"/>
+            </Style>
+
+            <Style x:Key="ButtonStyle3" TargetType="Button">
+                <Setter Property="Margin" Value="2,2,2,2"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Offset="0.5" Color="#738EF0"/>
+                            <GradientStop Offset="1" Color="#73B5F0"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="FontSize" Value="35"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0.1" Color="#f6afa0" />
+                <GradientStop Offset="0.65" Color="#f8dab5" />
+                <GradientStop Offset="0.8" Color="#f6afa0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="200"/>
+
+
+                </Grid.ColumnDefinitions>
+
+                <Image 
+                    Source="logo2.png"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"/>
+                <Button 
+                    x:Name="StartBtn"
+                    Style="{StaticResource ButtonStyle2}"
+                    Grid.Row="2" Grid.Column="0"
+                    Text="Graj"
+                    Clicked="OnStartButtonClicked"/> 
+                <Button 
+                    x:Name="RulesBtn"
+                    Style="{StaticResource ButtonStyle3}"
+                    Grid.Row="3" Grid.Column="0"
+                    Text="Zasady"
+                    Clicked="OnInstructionButtonClicked"/>
+
+
+            </Grid>
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

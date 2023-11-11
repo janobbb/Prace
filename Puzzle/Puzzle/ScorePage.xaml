@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Puzzle.ScorePage"
+             Title="ScorePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="ButtonStyle3" TargetType="Button">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Offset="0.4" Color="#C14442"/>
+                            <GradientStop Offset="1" Color="#89302E"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style x:Key="ButtonStyle1" TargetType="Button">
+                <Setter Property="Margin" Value="2,2,2,2"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="2,0">
+                            <GradientStop Offset="0.3" Color="#ff827a"/>
+                            <GradientStop Offset="0.5" Color="#f4679e"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0.1" Color="#f6afa0" />
+                <GradientStop Offset="0.65" Color="#f8dab5" />
+                <GradientStop Offset="0.8" Color="#f6afa0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout
+            Margin="2,2,2,2"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            <Label Text="Scoreboard"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   TextColor="White"
+                   Margin="0,0,0,10"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    x:Name="score1"
+                    Grid.Row="0" Grid.Column="0"
+                    Text="1."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score2"
+                    Grid.Row="1" Grid.Column="0"
+                    Text="2."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score3"
+                    Grid.Row="2" Grid.Column="0"
+                    Text="3."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score4"
+                    Grid.Row="3" Grid.Column="0"
+                    Text="4."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score5"
+                    Grid.Row="4" Grid.Column="0"
+                    Text="5."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score6"
+                    Grid.Row="5" Grid.Column="0"
+                    Text="6."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score7"
+                    Grid.Row="6" Grid.Column="0"
+                    Text="7."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score8"
+                    Grid.Row="7" Grid.Column="0"
+                    Text="8."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score9"
+                    Grid.Row="8" Grid.Column="0"
+                    Text="9."
+                    Style="{StaticResource ButtonStyle1}"/>
+                <Button
+                    x:Name="score10"
+                    Grid.Row="9" Grid.Column="0"
+                    Text="10."
+                    Style="{StaticResource ButtonStyle1}"/>
+
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="70"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                    x:Name="backBtn"
+                    Style="{StaticResource ButtonStyle3}"
+                    Grid.Row="0" Grid.Column="1"
+                    Text="Powrót"
+                    Clicked="OnBackButtonClicked"
+                    Margin="0,15,0,0"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </Grid>
+
+
+</ContentPage>
