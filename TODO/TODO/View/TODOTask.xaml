@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TODO.View.TODOTask"
+             xmlns:viewmodel="clr-namespace:TODO.ViewModel"
+             x:DataType="viewmodel:TODOTaskViewModel"
+             Title="{Binding WorkTask.TaskTitle}"
+             BackgroundColor="#E2E3E0">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry" x:Key="EntryTitle">
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style TargetType="Editor" x:Key="EntryDescription">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid HorizontalOptions="Center"
+          VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"/>
+        </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0"
+                   Style="{StaticResource EntryTitle}"
+                   Text="{Binding WorkTask.TaskTitle}"
+                   HorizontalTextAlignment="Center"/>
+            <Editor Grid.Row="1"
+                   Text="{Binding WorkTask.Description}"
+                    Placeholder="Opis"
+                    Style="{StaticResource EntryDescription}"/>
+        <Button
+            Grid.Row="2"
+            Text="Zapisz"
+            BackgroundColor="#7FC798"
+            CornerRadius="0"
+            FontSize="25"/>
+
+    </Grid>
+    
+</ContentPage>

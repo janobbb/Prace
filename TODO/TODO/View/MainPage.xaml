@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TODO.MainPage"
+             xmlns:model="clr-namespace:TODO.Models"
+             xmlns:viewmodel="clr-namespace:TODO.ViewModel"
+             Title="{Binding Title}"
+             x:DataType="viewmodel:TODOViewModel"
+             BackgroundColor="#E2E3E0">
+
+    <Grid>
+        <StackLayout 
+            HorizontalOptions="Center" 
+                     VerticalOptions="Center"
+                     BackgroundColor="White"
+                     WidthRequest="450"
+                     HeightRequest="650">
+
+            <Label Text="TO-DO LIST:"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,20"/>
+
+            <Grid
+                HeightRequest="50" WidthRequest="300">
+
+                <Entry Placeholder="Title"
+                   Text="{Binding NewWorkTaskTitle, Mode=TwoWay}"
+                       WidthRequest="240"/>
+
+            </Grid>
+
+            <CollectionView 
+                HeightRequest="425"
+                WidthRequest="300"
+                BackgroundColor="Transparent"
+                ItemsSource="{Binding WorkTasks}"
+                SelectionMode="None"
+                Margin="0,10,0,10">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate 
+                        x:DataType="model:WorkTask">
+                        <Frame
+                            x:Name="taskFrame">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                    CommandParameter="{Binding .}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TODOViewModel}}, Path=GoToDetailsCommand}"/>
+                            </Frame.GestureRecognizers>
+                            <HorizontalStackLayout>
+                                <CheckBox 
+                                    IsChecked="{Binding IsActive}"
+                                    VerticalOptions="Center"
+                                    Color="#7FC798"/>
+
+                                <VerticalStackLayout
+                                        VerticalOptions="Center">
+                                    <Label 
+                                        Text="{Binding TaskTitle}"
+                                        FontSize="20"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <HorizontalStackLayout
+                BackgroundColor="#7FC798"
+                TranslationY="25">
+                <Button 
+                    Text="Add Task"
+                    FontSize="25"
+                    WidthRequest="225"
+                    HeightRequest="50"
+                    Command="{Binding AddNewTaskCommand}"
+                    BackgroundColor="#7FC798"
+                    TextColor="White"
+                    CornerRadius="0"/>
+
+                <Button 
+                    Text="Delete Task"
+                    FontSize="25"
+                    WidthRequest="225"
+                    HeightRequest="50"
+                    Command="{Binding RemoveTaskCommand}"
+                    BackgroundColor="#7FC798"
+                    TextColor="White"
+                    CornerRadius="0"/>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
