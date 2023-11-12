@@ -20,4 +20,7 @@ Wygląd aplikacji Puzzle
 
 
 ![Puzzle](https://github.com/janobbb/Prace/assets/126664594/a00613cb-5123-4014-a519-81f10f4fea5d)
+![Puzzle2](https://github.com/janobbb/Prace/assets/126664594/8b525226-2276-41e7-9d45-bec16054308a)
+![Puzzle3](https://github.com/janobbb/Prace/assets/126664594/95ac030f-2a76-4e1d-80f3-5d8825c68075)
+
 
