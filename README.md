@@ -6,4 +6,8 @@
 
 3.Projekt "Calculator" to aplikacja stworzona w technologii WPF (Windows Presentation Foundation), która pełni rolę prostego kalkulatora.
 
+4.Projekt "Puzzle" to gra cross platform stworzona w technologii .NET Maui, w której zadaniem gracza jest ułożenie prostej układanki 3x3
+
+5.Projekt "TODO" to aplikacja cross platform stworzona w technologii .NET Maui, która zawiera notatki co użytkownik ma zrobić danego dnia (wersja początkowa)
+
 
