@@ -1,11 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using SQLite;
 using TODO.ViewModel;
 
 namespace TODO.Models
 {
     public partial class WorkTask : BaseViewModel
     {
-
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
         [ObservableProperty]
         public string taskTitle;
 
@@ -14,8 +16,6 @@ namespace TODO.Models
 
         [ObservableProperty]
         public bool isActive;
-        public bool IsEditing { get; set; } = false;
-        public bool IsNotEditing => !IsEditing;
 
     }
 }

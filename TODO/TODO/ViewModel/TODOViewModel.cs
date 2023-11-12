@@ -3,13 +3,14 @@ using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using TODO.Models;
+using TODO.Services;
 using TODO.View;
 
 namespace TODO.ViewModel
 {
     public partial class TODOViewModel : WorkTask
     {
-        public ObservableCollection<WorkTask> WorkTasks { get; set; } = new();
+        public ObservableCollection<WorkTask> WorkTasks { get; set; }
 
         [ObservableProperty]
         public string newWorkTaskTitle;
@@ -20,10 +21,14 @@ namespace TODO.ViewModel
 		public TODOViewModel()
         {
             Title = "TODO App";
+
+            WorkTasks = new ObservableCollection<WorkTask>();
+            LoadData().ConfigureAwait(false);
+
         }
 
         [RelayCommand]
-        private void AddNewTask()
+        private async Task AddNewTask()
         {
             if (IsBusy)
                 return;
@@ -38,10 +43,12 @@ namespace TODO.ViewModel
 
             IsBusy = false;
             NewWorkTaskTitle = null;
+
+            await ToDoService.AddWorkTask(newTask.TaskTitle);
         }
 
         [RelayCommand]
-        private void RemoveTask()
+        private async Task RemoveTask()
         {
             var newTasks = WorkTasks.Where(x => x.IsActive).ToList();
 
@@ -50,8 +57,23 @@ namespace TODO.ViewModel
                 if (task.IsActive)
                 {
                     WorkTasks.Remove(task);
+                    await ToDoService.RemoveWorkTask(task.ID);
+
                 }
             }
+        }
+
+        private async Task LoadData()
+        {
+            var tasksFromDatabase = (await ToDoService.GetTask());
+
+            if(tasksFromDatabase != null)
+            {
+                foreach (var task in tasksFromDatabase)
+                {
+                    WorkTasks.Add(task);
+                }
+            }       
         }
 
         [RelayCommand]
@@ -67,8 +89,6 @@ namespace TODO.ViewModel
                     { "WorkTask", workTask }
                 });
         }
-
-
         
     }
 }

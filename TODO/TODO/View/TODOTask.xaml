@@ -44,7 +44,8 @@
             Text="Zapisz"
             BackgroundColor="#7FC798"
             CornerRadius="0"
-            FontSize="25"/>
+            FontSize="25"
+            Command="{Binding SaveDetailsCommand}"/>
 
     </Grid>
     

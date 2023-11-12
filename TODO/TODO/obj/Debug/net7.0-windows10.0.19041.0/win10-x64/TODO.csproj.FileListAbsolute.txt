@@ -323,3 +323,9 @@ C:\Users\Janek\source\repos\TODO\TODO\obj\Debug\net7.0-windows10.0.19041.0\win10
 C:\Users\Janek\source\repos\TODO\TODO\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Janek\source\repos\TODO\TODO\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Janek\source\repos\TODO\TODO\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TODO.Models;
+using TODO.Services;
 
 namespace TODO.ViewModel
 {
@@ -18,6 +19,12 @@ namespace TODO.ViewModel
         }
         [ObservableProperty]
         WorkTask workTask;
+
+        [RelayCommand]
+        private async Task SaveDetails()
+        {
+            await ToDoService.SaveDetails(WorkTask);
+        }       
 
         [RelayCommand]
         private async Task GoToMainPageAsync()
