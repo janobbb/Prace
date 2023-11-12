@@ -14,3 +14,10 @@ Wygląd aplikacji TODO
 
 ![ToDo](https://github.com/janobbb/Prace/assets/126664594/6eba7b27-fba0-4540-9f17-bb71d06b1178)
 ![ToDo2](https://github.com/janobbb/Prace/assets/126664594/b9ed94cd-c1f0-41d6-a315-160944a133ac)
+
+
+Wygląd aplikacji Puzzle
+
+
+![Puzzle](https://github.com/janobbb/Prace/assets/126664594/a00613cb-5123-4014-a519-81f10f4fea5d)
+
