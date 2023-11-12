@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\TODO.csproj": {}
+    "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\TODO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\TODO.csproj": {
+    "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\TODO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\TODO.csproj",
+        "projectUniqueName": "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\TODO.csproj",
         "projectName": "TODO",
-        "projectPath": "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\TODO.csproj",
+        "projectPath": "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\TODO.csproj",
         "packagesPath": "C:\\Users\\Janek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\obj\\",
+        "outputPath": "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

@@ -13,10 +13,6 @@ namespace TODO.ViewModel
     [QueryProperty("WorkTask", "WorkTask")]
     public partial class TODOTaskViewModel : BaseViewModel
     {
-        public TODOTaskViewModel() 
-        { 
-
-        }
         [ObservableProperty]
         WorkTask workTask;
 
@@ -24,12 +20,8 @@ namespace TODO.ViewModel
         private async Task SaveDetails()
         {
             await ToDoService.SaveDetails(WorkTask);
-        }       
+            await Shell.Current.GoToAsync("..");
 
-        [RelayCommand]
-        private async Task GoToMainPageAsync()
-        {
-            await Shell.Current.GoToAsync($"{nameof(MainPage)}");
-        }
+        }     
     }
 }

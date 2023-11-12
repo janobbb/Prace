@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DM12bPCXZFKlbF92VY8r7RDwGGIYto5ONOkd8/JbNH4haf8VnfD+fkyWd+itFRLxHDryuRiYdFRKvfRfTDXKoA==",
+  "dgSpecHash": "zZ+zEEDO5decAseIQg5mKSuO4I8FmWYlBOmqfu2+yrAYGSJAnAZRmdBHKMAtt0WTpUZldvBvplsM2IUi+taisw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Janek\\source\\repos\\TODO\\TODO\\TODO.csproj",
+  "projectFilePath": "C:\\Users\\Janek\\Source\\Repos\\Prace\\TODO\\TODO\\TODO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janek\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Janek\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
