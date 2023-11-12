@@ -10,4 +10,5 @@
 
 5.Projekt "TODO" to aplikacja cross platform stworzona w technologii .NET Maui, która zawiera notatki co użytkownik ma zrobić danego dnia (wersja początkowa)
 
-
+Wygląd aplikacji TODO
+![ToDo](https://github.com/janobbb/Prace/assets/126664594/6eba7b27-fba0-4540-9f17-bb71d06b1178)
